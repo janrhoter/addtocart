@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>💸ShopShopShop💸</title>
+  <link rel="icon" href="images/Shop.ico">
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://kit.fontawesome.com/8f27d68390.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Emilys+Candy&family=Fascinate&family=Grand+Hotel&family=Happy+Monkey&family=Kranky&family=Sacramento&family=ZCOOL+XiaoWei&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+  <header>
+    <h1 class="shop">💸💸💸$hop$hop$hop💸💸💸</h1>
+    <div class="cart-box">
+      <div class="cart-icon">
+        <i class="fas fa-cart-arrow-down fa-2x"></i>
+      </div>
+      <div class="whole-cart-window hide">
+        <h2>ADD TO CART</h2>
+        <div class="cart-wrapper">
+        </div>
+        <div class="subtotal">Subtotal: $: 0.00</div>
+        <div class="checkout">Checkout</div>
+        <div class="view-cart">View Cart</div>
+      </div>
+    </div>
+  </header>
+
+<h1 class="onePiece">👒 One Piece Merchandise 👒</h1>
+<p class="goat">ONE PIECE is a Japanese manga series written and illustrated by Eiichiro Oda.
+  It has been serialized in Shueisha's shōnen manga magazine Weekly Shōnen Jump since July 1997,
+  with its individual chapters compiled into 102 tankōbon volumes as of April 2022.
+  The story follows the adventures of Monkey D. Luffy, a boy whose body gained the properties
+  of rubber after unintentionally eating a Devil Fruit. With his pirate crew, the Straw Hat Pirates,
+  Luffy explores the Grand Line in search of the deceased King of the Pirates Gol D. Roger's
+  ultimate treasure known as the "One Piece" in order to become the next King of the Pirates.</p>
+
+  <!--image slider start -->
+  <div class="slider">
+    <div class="slides">
+      <!-- radio buttion start -->
+      <input type="radio" name="r-btn" id="OP1">
+      <input type="radio" name="r-btn" id="OP2">
+      <input type="radio" name="r-btn" id="OP3">
+
+      <!-- radio buttion end -->
+      <!-- slide images start-->
+      <div class="slide op1">
+        <img class="one"src="images/1.jpg" alt="">
+      </div>
+      <div class="slide">
+        <img class="two"src="images/2.jpg" alt="">
+      </div>
+      <div class="slide">
+        <img class="three"src="images/3.jpg" alt="">
+      </div>
+
+    </div> -->
+    <!-- manual navigation-->
+    <div class="">
+      <div class="navigation-manual">
+        <label for="OP1" class="m-btn"></label>
+        <label for="OP2" class="m-btn"></label>
+        <label for="OP3" class="m-btn"></label>
+      </div>
+      <!-- manual navigation end-->
+    </div>
+    <!--image slider end -->
+<hr class="dotted">
+
+
+    <script type="text/javascript">
+      var counter = 1;
+      setInterval(function() {
+        document.getElementById('radio' + counter).checked = true;
+        counter++;
+        if (counter > 4) {
+          counter = 1;
+        }
+      }, 5000);
+    </script>
+  </div>
+
+
+
+  <!-- product 1 -->
+  <section class="shop-section">
+    <div class="card-wrapper">
+      <div data-id="1" class="card-item">
+        <img src="images/a1.png" />
+        <div class="details">
+          <h3>Tony Tony Chopper</h3>
+          <p>
+            <span class="price">Price: $140</span>
+            <span class="add-to-cart-btn">Add To Cart</span>
+          </p>
+          <p class="desc">Tony Tony Chopper is also known as <strong>"Cotton Candy Lover"</strong>.
+        Chopper is the <strong>doctor</strong> of the <strong>Straw Hat Pirates</strong>.
+        He is the sixth member of the crew and the fifth to join, doing so at the end of the Drum Island Arc.</p>
+        </div>
+      </div>
+      <!-- product 2 -->
+      <div data-id="2" class="card-item">
+        <img src="images/a2.png" />
+        <div class="details">
+          <h3>Shusui</h3>
+          <p>
+            <span class="price">Price: $130</span>
+            <span class="add-to-cart-btn">Add To Cart</span>
+          </p>
+          <p class="desc">Shusui is one of the 21 Great Grade swords and a <strong>"Black Sword/Blade" (黒刀 Kokutō)</strong>
+    that was once wielded by the legendary samurai <strong>Shimotsuki Ryuma</strong>. It is prized as the national treasure of the Wano Country.
+    After his death, the katana was buried with Ryuma, until his grave was robbed by Gecko Moria 23 years ago</p>
+        </div>
+      </div>
+      <!-- product 3 -->
+      <div data-id="3" class="card-item">
+        <img src="images/a3.png"/>
+        <div class="details">
+          <h3>Kaido</h3>
+          <p>
+            <span class="price">Price: $120</span>
+            <span class="add-to-cart-btn">Add To Cart</span>
+          </p>
+          <p class="desc">Kaidou of the Beasts, renowned as the world's <strong>"Strongest Creature"</strong>,
+      is the Governor-General of the Beasts Pirates and was formerly one of the <strong>Four Emperors</strong>
+      ruling over the New World. He is also the father of <strong>Yamato</strong>.</p>
+        </div>
+      </div>
+        </div>
+
+
+  </section>
+  <script src="index.js"></script>
+</body>
+<footer>
+  One Piece Forever!!! ❤️❤️❤️
+</footer>
+
+</html>
